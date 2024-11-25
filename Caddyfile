@@ -1,0 +1,18 @@
+{
+	order gcsproxy last
+	debug
+}
+
+:4280 {
+	log
+	respond /health-check "OK" 200
+	respond /test "This is working" 200
+
+	gcsproxy /* {
+		bucket "{env.GCS_BUCKET}"
+		project_id "{env.GCP_PROJECT}"
+		credentials_file "{env.GCP_CREDS}"
+		root "{env.GCS_ROOT}"
+		index index.html
+	}
+}
