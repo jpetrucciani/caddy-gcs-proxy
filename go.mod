@@ -1,4 +1,4 @@
-module caddygcsproxy
+module github.com/jpetrucciani/caddy-gcs-proxy
 
 go 1.23.3
 
