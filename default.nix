@@ -1,8 +1,8 @@
 { pkgs ? import
     (fetchTarball {
-      name = "jpetrucciani-2024-11-25";
-      url = "https://github.com/jpetrucciani/nix/archive/10b10043084bd71cc60ea06f052e970f03464580.tar.gz";
-      sha256 = "0b57gj31470imrdmz75iixgl30s6vqf4dww1yadwhzlzcprcymwg";
+      name = "jpetrucciani-2025-10-07";
+      url = "https://github.com/jpetrucciani/nix/archive/15d79d49616d420eb45e52479c42d57ff8f58537.tar.gz";
+      sha256 = "1z373gnlz41zvqjl8hq7ks2nzsss6c1q8mv95vamxzhq6jcsqwfj";
     })
     { }
 }:
@@ -11,7 +11,7 @@ let
 
   tools = with pkgs; {
     go = [
-      go
+      go_1_25
       go-tools
       gopls
       xcaddy

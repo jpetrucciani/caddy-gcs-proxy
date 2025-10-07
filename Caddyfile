@@ -13,6 +13,5 @@
 		project_id "{env.GCP_PROJECT}"
 		credentials_file "{env.GCP_CREDS}"
 		root "{env.GCS_ROOT}"
-		index index.html
 	}
 }
