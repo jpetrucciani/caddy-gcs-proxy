@@ -24,7 +24,7 @@ let
       name = "run-gcs-proxy";
       description = "run caddy with the gcs-proxy plugin in watch mode against the caddyfile in the conf dir";
       script = ''
-        ${xcaddy}/bin/xcaddy run --config ./conf/Caddyfile --watch "$@"
+        ${xcaddy}/bin/xcaddy run -- --config ./conf/Caddyfile --watch "$@"
       '';
     };
     run = pog {
